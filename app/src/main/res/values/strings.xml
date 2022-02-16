@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">REPRODUCTOR MULTIMEDIA</string>
+    <string name="iniciar">INICIAR</string>
+    <string name="parar">DETENER</string>
+
+    //STRING DE LOS TAB
+    <string name="Home">INICIO</string>
+    <string name="Audio">REPRODUCTOR DE AUDIO</string>
+    <string name="Video">REPRODUCTOR DE VIDEO</string>
+
+    //string para reproductor de video
+    <string name="Titulodevideo">REPRODUCTOR DE VIDEO</string>
+
+</resources>

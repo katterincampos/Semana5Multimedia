@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B085FA"
+    android:foregroundTint="#3F51B5"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:background="#C291E4"
+        app:tabIconTint="@color/purple_500"
+        app:tabTextColor="@color/black">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_hogar_1"
+            android:text="@string/Home" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:backgroundTint="@color/black"
+            android:foregroundTint="@color/black"
+            android:icon="@drawable/ic_reproductor_de_musica"
+            android:text="@string/Audio"
+            android:tint="@color/black"
+            app:tint="@color/black" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:backgroundTint="@color/black"
+            android:foregroundTint="@color/black"
+            android:icon="@drawable/ic_video_marketing"
+            android:text="@string/Video" />
+    </com.google.android.material.tabs.TabLayout>
+</LinearLayout>
