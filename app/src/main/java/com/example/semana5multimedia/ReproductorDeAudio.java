@@ -3,16 +3,14 @@ package com.example.semana5multimedia;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.media.MediaPlayer;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class ReproductorDeAudio extends AppCompatActivity implements
         View.OnClickListener  {
 
-    Button iniciar, parar;
+    Button Iniciar, Parar;
     MediaPlayer mediaPlayer;
 
     @Override
@@ -20,22 +18,22 @@ public class ReproductorDeAudio extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reproductor_de_audio);
 
-        iniciar = (Button)findViewById(R.id.button);
-        parar   = (Button)findViewById(R.id.button2);
-        mediaPlayer = MediaPlayer.create(this,R.raw.heart);
+        Iniciar = (Button)findViewById(R.id.Iniciar);
+        Parar   = (Button)findViewById(R.id.Parar);
+        mediaPlayer = MediaPlayer.create(this,R.raw.sound);
 
-        iniciar.setOnClickListener(this);
-        parar.setOnClickListener(this);
+        Iniciar.setOnClickListener(this);
+        Parar.setOnClickListener(this);
     }
 
 
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.button:
+            case R.id.Iniciar:
                 play();
                 break;
-            case R.id.button2:
+            case R.id.Parar:
                 stop();
                 break;
         }

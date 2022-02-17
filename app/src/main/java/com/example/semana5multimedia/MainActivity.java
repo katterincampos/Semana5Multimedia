@@ -12,7 +12,8 @@ import com.google.android.material.tabs.TabLayout;
 public class MainActivity extends AppCompatActivity {
 
     TabLayout Menu;
-    TabItem opciones1,opciones2,opciones3;
+
+    TabItem tab1,tab2,tab3;
 
 
     @Override
@@ -21,28 +22,30 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Menu=findViewById(R.id.Menu);
-        opciones1=findViewById(R.id.inicio);
-        opciones2=findViewById(R.id.reprod_audio);
-        opciones3=findViewById(R.id.reprod_video);
+        tab1=findViewById(R.id.inicio);
+        tab2=findViewById(R.id.audio);
+        tab3=findViewById(R.id.video);
 
         Menu.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
 
-                if (tab.getPosition()==0){
-                    Intent siguiente=new Intent(MainActivity.this,MainActivity.class);
-
-            }
-                if (tab.getPosition()==1){
-                    Intent siguiente=new Intent(MainActivity.this,ReproductorDeAudio.class);
-
+                if(tab.getPosition()==0){
+                    Intent siga = new Intent(MainActivity.this,MainActivity.class);
+                    startActivity(siga);
+                }
+                if(tab.getPosition()==1){
+                    Intent siga = new Intent(MainActivity.this,ReproductorDeAudio.class);
+                    startActivity(siga);
+                }
+                if(tab.getPosition()==2){
+                    Intent siga = new Intent(MainActivity.this,ReproductorDeVideo.class);
+                    startActivity(siga);
                 }
 
-                if (tab.getPosition()==2){
-                    Intent siguiente=new Intent(MainActivity.this,ReproductorDeVideo.class);
 
-                }
             }
+
 
 
             @Override

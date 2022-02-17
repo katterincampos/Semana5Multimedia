@@ -25,7 +25,7 @@
             android:text="@string/Home" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/reprod.audio"
+            android:id="@+id/audio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/black"
@@ -37,7 +37,7 @@
             app:tint="@color/black" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/reprod.video"
+            android:id="@+id/video"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/black"
