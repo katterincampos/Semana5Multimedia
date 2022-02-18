@@ -23,7 +23,7 @@
 
     <VideoView
         android:id="@+id/videoView"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="214dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
